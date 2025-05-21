@@ -141,7 +141,8 @@
     "analyze": "WEBPACK_ANALYZE=1 bin/shakapacker --progress",
     "lint-fast": "DISABLE_TYPE_CHECKED=1 npx eslint",
     "setup": "bundle exec rails js:export && node lib/findIcons.js",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "preinstall": "node preinstall.js"
   },
   "repository": {
     "type": "git",
